@@ -1,0 +1,9 @@
+<div class="bottom-bar">
+    <div style="display: flex; flex-direction: row;" *ngIf="loggedIn">
+    <app-large-button [link]="'my-team'" [text]="'My Team'"></app-large-button>
+    <app-large-button [link]="'stats/me'" [text]="'My Stats'"></app-large-button>
+    <app-large-button [link]="'guild-info'" [text]="'Guild Info'"></app-large-button>
+    <app-large-button [link]="'calculator'" [text]="'CP Calc'"></app-large-button>
+    <app-large-button [link]="'settings'" [text]="'My Settings'"></app-large-button>
+    </div>
+</div>

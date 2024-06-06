@@ -1,0 +1,12 @@
+<div class="nav-div">
+    <div>
+        <img class="logo-img" src="assets/DogeLogo.jpg"/>
+    </div>
+    <div class="row-container">
+        <app-large-button [link]="'library'" [text]="'Library'"></app-large-button>
+        <app-large-button [link]="'guilds'" [text]="'Guilds'"></app-large-button>
+        <app-large-button [link]="'about'" [text]="'About Us'"></app-large-button>
+        <app-large-button *ngIf="!loggedIn" [link]="'login'" [text]="'Log In'"></app-large-button>
+        <app-large-button *ngIf="loggedIn" (click)="logOut()" [text]="'Log Out'"></app-large-button>
+    </div>
+</div>

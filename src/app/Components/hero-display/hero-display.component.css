@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  background-color: #430b0b;
+  margin-top: 2%;
+}
+
+.hero-icon {
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-icon-img {
+  width: 60px;
+  height: 90px;
+  margin-left: 5%;
+}
+
+.hero-name {
+  color: rgb(177, 144, 144);
+  font-size: larger;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 80%;
+}
+
+.detailed-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: #430b0b;
+}
+
+.hero-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: fit-content;
+  background-color: #430b0b;
+}
+
+p {
+  color: rgb(177, 144, 144);
+  font-size: smaller;
+  margin: 2%;
+}

@@ -1,0 +1,36 @@
+<div style="margin-top: 40%;">
+    <!-- If done loading -->
+    <div *ngIf="!loading">
+        <!-- Characters Option -->
+        <div class="option" style="margin-bottom: 2%; margin-top: 2%;" (click)="toggleCharactersClicked()">
+            <h1>Characters</h1>
+        </div>
+        <!-- If Characters are fetched from database -->
+        <div *ngIf="characters">
+            <!-- If Characters Option is clicked -->
+            <div *ngIf="charactersClicked">
+                <div *ngIf="characters.length === 0">
+                    <h1>Database is not public yet. Coming Soon!</h1>
+                </div>
+                <app-hero-display *ngFor="let character of characters" [character]="character"></app-hero-display>
+            </div>
+        </div>
+        <!-- Mythics Option -->
+        <div class="option" style="margin-bottom: 2%; margin-top: 2%;" (click)="toggleMythicsClicked()">
+            <h1>Mythics</h1>
+        </div>
+        <!-- If Mythics Option is Clicked -->
+        <div *ngIf="mythicsClicked">
+            <h1>Coming Soon</h1>
+        </div>
+        <!-- Artifacts Option -->
+        <div class="option" style="margin-bottom: 2%; margin-top: 2%;" (click)="toggleArtifactsClicked()">
+            <h1>Artifacts</h1>
+        </div>
+        <!-- If Artifacts Option is Clicked -->
+        <div *ngIf="artifactsClicked">
+            <h1>Coming Soon</h1>
+        </div>
+        
+    </div>
+</div>

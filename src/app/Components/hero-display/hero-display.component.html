@@ -1,0 +1,29 @@
+<div class="container" (click)="toggleClicked()">
+    <div class="hero-icon">
+        <img class="hero-icon-img" [src]="iconUrl" />
+    </div>
+    <div class="hero-stats">
+        <div class="hero-name">
+            <h1 style="margin-bottom: 2%; margin-top: 2%;">{{ character.name }}</h1>
+            <div *ngIf="clicked" class="detailed-info">
+                <div class="hero-detail">
+                    <p>Rarity: {{character.rarity.rarityLevel}}</p>
+                    <br/>
+                    <p>Faction: {{character.faction}}</p>
+                </div>
+                <div class="hero-detail">
+                    <p>Base Attack: {{character.baseAttack}}</p>
+                    <br>
+                    <p>Base Defense: {{character.baseArmor}}</p>
+                    <br>
+                    <p>Base Health: {{character.baseHP}}</p>
+                    <p>Base Speed: {{character.baseSpeed}}</p>
+                </div>
+                <div class="hero-detail">
+                    <p>Available Skins: </p>
+                    <div *ngFor="let skin of character.availableSkins">
+                        <p>{{skin.name}}</p>
+                    </div>
+            </div>
+        </div>
+</div>
